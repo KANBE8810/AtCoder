@@ -1,6 +1,4 @@
 #include<iostream>
-#include <iomanip>
-#include <limits>
 using namespace std;
 
 int main(){
@@ -13,7 +11,7 @@ int main(){
     }
     else {
         ks=N/2+1;
-        ans =(double)ks/(double)N;
+        ans =ks/N;
     }
-    cout << setprecision(10) << ans << endl;
+    cout << ans << endl;
 }
