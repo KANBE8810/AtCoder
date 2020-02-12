@@ -11,5 +11,4 @@ using P = pair<int,int>;
 int main(){
     int n;
     cin >> n;
-
 }
