@@ -3,18 +3,21 @@
 #include<algorithm>
 #include<iomanip>
 #include<utility>
-#include<iomanip>
 #include<map>
-#include<cmath>
 #define rep(i,n) for(int i=0; i<(n); ++i)
 using namespace std;
 using ll =long long;
 using P = pair<int,int>;
 
 int main(){
-    cin.tie(0);
-    int n;
-    cin >> n;
+    int a,b,cnt=0,m=1;
+    cin >> a >> b;
+
+    while(m<b){
+        m = m-1+a;
+        cnt++;
+    }
+    cout << cnt << endl;
 
     return 0;
 }
