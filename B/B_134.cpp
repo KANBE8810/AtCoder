@@ -13,8 +13,8 @@ using ll =long long;
 using P = pair<int,int>;
 
 int main(){
-    int n;
-    cin >> n;
-
+    float n,d;
+    cin >> n >> d;
+    cout << ceil(n/(d*2+1)) << endl;
     return 0;
 }

@@ -13,8 +13,20 @@ using ll =long long;
 using P = pair<int,int>;
 
 int main(){
-    int n;
-    cin >> n;
+    ll n,y;
+    cin >> n >> y;
+    vector<int> a(n,0);
+
+    while(1){
+        while(y>10000){
+            y-=10000;
+            a[0]++;
+        }
+        while(y>1000){
+            y-=1000;
+            a[2]++;
+        }
+    }
 
     return 0;
 }

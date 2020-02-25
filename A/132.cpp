@@ -13,8 +13,14 @@ using ll =long long;
 using P = pair<int,int>;
 
 int main(){
-    int n;
+    string n;
     cin >> n;
-
+    sort(n.begin(),n.end());
+    if(n[0]==n[1] && n[2]==n[3] && n[0]!=n[2]){
+        cout << "Yes" << endl;
+        return 0;
+    }
+    
+    cout << "No" << endl;
     return 0;
 }
