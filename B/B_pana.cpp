@@ -6,25 +6,24 @@
 #include<iomanip>
 #include<map>
 #include<cmath>
+#include<cstdio>
 #define rep(i,n) for(int i=0; i<(n); ++i)
 using namespace std;
 using ll =long long;
 using P = pair<int,int>;
 
-bool is_prime(long long n) {
-    if (n <= 1) return false;
-    for (long long p = 2; p * p <= n; ++p) {
-        if (n % p == 0) return false;
-    }
-    return true;
-}
-
 int main(){
-    ll n;
-    cin >> n;
-    while(!is_prime(n)){
-        ++n;
+    ll h,w;
+    cin >> h >> w;
+    ll ans=(h*w);
+    if(h==1 || w == 1){
+        cout << 1 << endl;
+        return 0;
     }
-    cout << n << endl;
+    if(ans%2==0){
+        cout << ans/2 << endl;
+        return 0;
+    }else
+        cout << ans/2+1 << endl;
     return 0;
 }

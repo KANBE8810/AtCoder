@@ -6,25 +6,26 @@
 #include<iomanip>
 #include<map>
 #include<cmath>
+#include<cstdio>
 #define rep(i,n) for(int i=0; i<(n); ++i)
 using namespace std;
 using ll =long long;
 using P = pair<int,int>;
 
-bool is_prime(long long n) {
-    if (n <= 1) return false;
-    for (long long p = 2; p * p <= n; ++p) {
-        if (n % p == 0) return false;
-    }
-    return true;
-}
-
 int main(){
-    ll n;
+    int n;
     cin >> n;
-    while(!is_prime(n)){
-        ++n;
+    pair<pair<string,int>,int> p[110];
+    map<string,int> memo;
+    rep(i,n){
+        int t;
+        string m;
+        cin >> m >> t;
+        p[i] = make_pair(make_pair(m,-t),i);
     }
-    cout << n << endl;
+    sort(p,p+n);
+    rep(i,n){
+        cout << p[i].second +1 << endl;
+    }
     return 0;
 }
