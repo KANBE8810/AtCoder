@@ -1,4 +1,4 @@
-159: A_159.cpp B_159.cpp C_159.cpp
-	g++ A_159.cpp -o a 
-	g++ B_159.cpp -o b 
-	g++ C_159.cpp -o c
+167: A_168.cpp B_168.cpp C_168.cpp
+	g++ A_168.cpp -o Aa
+	g++ B_168.cpp -o Bb
+	g++ C_168.cpp -o Cc
